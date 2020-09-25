@@ -1,7 +1,7 @@
 'use strict';
 const mapObj = require('map-obj');
 const camelCase = require('camelcase');
-const QuickLru = require('quick-lru');
+import QuickLru from 'quick-lru';
 
 const has = (array, key) => array.some(x => {
 	if (typeof x === 'string') {
