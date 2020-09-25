@@ -68,7 +68,7 @@ const camelCaseConvert = (input, options) => {
 	return mapObj(input, makeMapper(undefined));
 };
 
-module.exports = (input, options) => {
+export default (input, options) => {
 	if (Array.isArray(input)) {
 		return Object.keys(input).map(key => camelCaseConvert(input[key], options));
 	}
